@@ -1,6 +1,6 @@
 This is a hospital(clinic) related website.
 *This website name is MediClinic.
-*livesite link:
+*livesite link:https://mediclinic-7e0d9.web.app/
 *Here you can see the about of this clinic----------
 you look the list of doctor,you can get doctor appointments by using phone.You can add choose clinic service as you like.
 
