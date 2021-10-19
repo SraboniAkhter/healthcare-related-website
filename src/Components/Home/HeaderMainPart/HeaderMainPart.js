@@ -17,7 +17,7 @@ const HeaderMainPart = () => {
                         src={main1}
                         alt="First slide"
                     />
-                    <Carousel.Caption className="text-dark">
+                    <Carousel.Caption className="text-white">
                         <h1>Welcome <span>{user.displayName}</span> to MediClinic </h1>
                         <p>Best in the Country for the corporate checkup.</p>
                     </Carousel.Caption>

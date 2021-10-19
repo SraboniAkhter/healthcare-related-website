@@ -1,6 +1,5 @@
 import React from 'react';
 import HeaderMainPart from '../HeaderMainPart/HeaderMainPart';
-import Navbar from '../../Shared/Navbar/Navbar';
 import Info from '../Info/Info'
 import './Header.css'
 

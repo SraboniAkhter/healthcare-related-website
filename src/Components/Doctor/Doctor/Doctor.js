@@ -14,7 +14,7 @@ const Doctor = ({doctor}) => {
                 </div>
             </div>
            <div>
-           <Link to="/"><button className="btn btn-info">Appointment</button></Link>
+           <Link to="/makeAppointment"><button className="btn btn-info">Appointment</button></Link>
 
            </div>
         </div>
