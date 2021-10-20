@@ -16,7 +16,7 @@ const Login = () => {
     const redirect_uri = location?.state?.from || '/home';
 
 
-
+// email password holding on input.
     const handleEmailChange = e => {
       setEmail(e.target.value);
 
@@ -24,6 +24,7 @@ const Login = () => {
   const handlePasswordChange = e => {
        setPassword(e.target.value);
   }
+  // login submit button
   const handleLogin = () => {
     console.log(email, password)
     handleLogInUser(email, password)
@@ -31,11 +32,12 @@ const Login = () => {
       history.push(redirect_uri);
     })
   }
-
+// form submit
   const handleSubmit = e => {
     e.preventDefault();
 
 }
+// login with google
     const handleGoogleLogin = () => {
         signInUsingGoogle()
         .then((result) => {
@@ -79,7 +81,7 @@ const Login = () => {
             
             <button onClick={handleGoogleLogin} className="btn btn-info text-white"><FontAwesomeIcon className="icon me-2 text-white" icon={faGoogle} />SignIn with Google</button>
             <br />
-            <Link to="/register">New User?</Link>
+            <Link className="text-info" to="/register">New User?</Link>
             <br /> <br /> <br />
         </div>
     );

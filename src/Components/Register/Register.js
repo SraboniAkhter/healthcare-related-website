@@ -12,11 +12,14 @@ const Register = () => {
     const {signInUsingGoogle , createIdWithEmailAndPassword} = useAuth();
 
 
+    // form submission
+
     const handleRegistration = e => {
              e.preventDefault();
 
     }
 
+    // name email password holding on input.
     const handleNameChange = e => {
          setName(e.target.value);
     }
@@ -26,9 +29,11 @@ const Register = () => {
     const handlePasswordChange = e => {
          setPassword(e.target.value);
     }
+    // form submit button
     const handleCreateUser = () => {
         createIdWithEmailAndPassword(email, password,name)
-        console.log(email, password,name)
+        // console.log(email, password,name)
+        setError("");
     }
 
     return (
@@ -61,14 +66,18 @@ const Register = () => {
     <div className="col-sm-10">
         <div className="row mb-3 text-danger">{error}</div>
         <br />
+      <Link to="/login">
       <button onClick={handleCreateUser} type="submit" className="btn btn-info text-white">Register</button>
+        </Link>
     </div>
   </div>
 </form>
+          {/* login with google*/}
             <div>------------or-----------</div>
              <button onClick={signInUsingGoogle} className="btn btn-info text-white"><FontAwesomeIcon className="icon me-2 text-white" icon={faGoogle} />SignIn with Google</button>
              <br />
-             <Link to="/login">Already Register?</Link>
+             <Link className="text-info" to="/login">Already Register?</Link>
+             <br /> <br /> <br />
         </div>
     );
 };

@@ -30,7 +30,7 @@ const HeaderMainPart = () => {
                         alt="Second slide"
                     />
 
-                    <Carousel.Caption className="text-dark">
+                    <Carousel.Caption className="text-white">
                         <h3>Dedication and commitment</h3>
                         <p>More then 2000 emergency patients treated.</p>
                     </Carousel.Caption>
@@ -43,7 +43,7 @@ const HeaderMainPart = () => {
                         alt="Third slide"
                     />
 
-                    <Carousel.Caption className="text-dark">
+                    <Carousel.Caption className="text-white">
                         <h3>We have the finest physicians</h3>
                         <p>Almost 400+ dialysis are complete.</p>
                     </Carousel.Caption>

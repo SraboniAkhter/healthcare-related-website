@@ -17,6 +17,7 @@ import Services from './Components/Home/Services/Services';
 import Appointment from './Components/Appointment/Appointment/Appointment';
 import Doctors from './Components/Doctor/Doctors/Doctors';
 import MakeAppointment from './Components/MakeAppointment/MakeAppointment';
+import SuccessAppointment from './Components/SuccessAppointment/SuccessAppointment';
 
 function App() {
   return (
@@ -31,6 +32,9 @@ function App() {
           </PrivateRoute>
           <Route path="/service">
             <Services />
+          </Route>
+          <Route path="/success">
+            <SuccessAppointment />
           </Route>
           <PrivateRoute path="/appointment/:serviceId">
             <Appointment />
